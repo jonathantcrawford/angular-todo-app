@@ -135,5 +135,10 @@
       }
     }
   },
-  "defaultProject": "angular-mock-data"
+  "defaultProject": "angular-mock-data",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
