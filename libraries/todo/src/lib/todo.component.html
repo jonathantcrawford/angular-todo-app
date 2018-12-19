@@ -1,0 +1,12 @@
+<mat-checkbox [disabled]="mode == 'edit'" [checked]="todo.status | todoCompleted" (change)="setStatus($event)"></mat-checkbox>
+<div class="todo-content" [ngSwitch]="mode">
+    <div *ngSwitchCase="'display'" [genStrikeThrough]="todo.status | todoCompleted" (click)="setMode('edit')">{{todo.name}}</div>
+    <mat-form-field *ngSwitchCase="'edit'">
+      <input #edit matInput type="text" [genStrikeThrough]="todo.status | todoCompleted" [value]="todo.name" (keyup.enter)="patchTodo({name: edit.value})">
+    </mat-form-field>
+</div>
+<button mat-button  [matMenuTriggerFor]="menu"><mat-icon>more_vert</mat-icon></button>
+<mat-menu #menu="matMenu">
+  <button [disabled]="mode == 'edit'" mat-menu-item (click)="setMode('edit')">Edit</button>
+  <button mat-menu-item (click)="deleteTodo()">Delete</button>
+</mat-menu>

@@ -23,5 +23,9 @@
     "/starwars/universe/transport/starships": {
         "target": "http://localhost:3000",
         "secure": false
+    },
+    "/todos": {
+        "target": "http://localhost:3000",
+        "secure": false
     }
 }

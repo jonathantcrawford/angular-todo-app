@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StarshipsModule } from './starships/starships.module';
 import { StarshipsService } from './starships/starships.service';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { TodoModule } from 'todo';
 
 @NgModule({
   declarations: [
@@ -12,7 +15,9 @@ import { StarshipsService } from './starships/starships.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    TodoModule
   ],
   providers: [StarshipsService],
   bootstrap: [AppComponent]

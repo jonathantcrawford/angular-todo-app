@@ -1,0 +1,4 @@
+<mat-form-field appearance="outline">
+  <mat-label>Create a Todo</mat-label>
+  <input matInput type="text" placeholder="I have to ..." [formControl]="name"  (keyup.enter)="createTodo()">
+</mat-form-field>
