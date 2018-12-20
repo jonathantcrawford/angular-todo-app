@@ -1,0 +1,11 @@
+<div class="filter-options">
+  <button mat-stroked-button (click)="sortBy('')">All Todos</button>
+  <button mat-stroked-button [matBadge]="incompleteCount" [matBadgeHidden]="incompleteCount < 1" matBadgePosition="before" matBadgeColor="warn" (click)="sortBy('incomplete')">Incomplete</button>
+  <button mat-stroked-button [matBadge]="completeCount" [matBadgeHidden]="completeCount < 1" matBadgePosition="before" matBadgeColor="primary" (click)="sortBy('complete')">Complete</button>
+</div>      
+<mat-list role="list" >
+  <mat-list-item role="listitem" *ngFor="let todo of todos | todofilter : filterOption">
+          <td-todo [todo]="todo"></td-todo>
+          <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
