@@ -1,0 +1,17 @@
+{
+  "todos": {
+    "todoKey": 12,
+    "results": [
+      {
+        "name": "Wash the dishes.",
+        "status": "incomplete",
+        "id": 6
+      },
+      {
+        "name": "Walk the dogs.",
+        "status": "incomplete",
+        "id": 12
+      }
+    ]
+  }
+}

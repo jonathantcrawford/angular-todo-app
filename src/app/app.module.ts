@@ -3,23 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StarshipsService } from './starships/starships.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TodoModule } from 'todo';
+import { WelcomeComponent } from './welcome/welcome.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    TodoModule
+    BrowserAnimationsModule
   ],
-  providers: [StarshipsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

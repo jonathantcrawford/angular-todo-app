@@ -1,9 +1,0 @@
-{
-    "todos": {
-        "todoKey": 2,
-        "results": [
-            { "id": 1, "name": "Walk the dogs.", "status": "incomplete" },
-            { "id": 2, "name": "Wash the dishes.", "status": "incomplete" }
-        ]
-    }
-}
