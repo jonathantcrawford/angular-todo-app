@@ -1,16 +1,46 @@
 {
   "todos": {
-    "todoKey": 13,
+    "todoKey": 21,
     "results": [
       {
-        "name": "Wash the dishes.",
-        "status": "incomplete",
-        "id": 6
+        "name": "Learn angular pipes.",
+        "status": "complete",
+        "id": 14
       },
       {
-        "name": "Walk the dogs.",
-        "status": "incomplete",
-        "id": 12
+        "name": "Learn angular attribute directives.",
+        "status": "complete",
+        "id": 15
+      },
+      {
+        "name": "Learn angular lazy loading.",
+        "status": "complete",
+        "id": 16
+      },
+      {
+        "name": "Learn angular routing.",
+        "status": "complete",
+        "id": 17
+      },
+      {
+        "name": "Learn rxjs observables.",
+        "status": "complete",
+        "id": 18
+      },
+      {
+        "name": "Learn angular structural directives.",
+        "status": "complete",
+        "id": 19
+      },
+      {
+        "name": "Learn component interaction (Data Binding, Inputs).",
+        "status": "complete",
+        "id": 20
+      },
+      {
+        "name": "Learn angular template syntax.",
+        "status": "complete",
+        "id": 21
       }
     ]
   }
