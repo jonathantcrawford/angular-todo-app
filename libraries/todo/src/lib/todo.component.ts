@@ -3,7 +3,7 @@ import { Todo, TodoStatus } from './todo';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import { TodoService } from './todo.service';
 
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'td-todo',

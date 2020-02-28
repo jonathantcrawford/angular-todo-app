@@ -4,7 +4,7 @@ import { TodoService } from '../todo.service';
 
 import { Todo, TodoStatus } from '../todo';
 
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
